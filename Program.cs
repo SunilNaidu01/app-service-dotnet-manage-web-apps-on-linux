@@ -56,7 +56,7 @@ namespace ManageLinuxWebAppBasic
                 var webSite1Collection = resourceGroup1.GetWebSites();
                 var webSite1Data = new WebSiteData(region)
                 {
-                    SiteConfig = new Azure.ResourceManager.AppService.Models.SiteConfigProperties()
+                    SiteConfig = new SiteConfigProperties()
                     {
                         WindowsFxVersion = "PricingTier.StandardS1",
                         NetFrameworkVersion = "NetFrameworkVersion.V4_6",
@@ -78,7 +78,7 @@ namespace ManageLinuxWebAppBasic
                 var webSite2Collection = resourceGroup2.GetWebSites();
                 var webSite2Data = new WebSiteData(region)
                 {
-                    SiteConfig = new Azure.ResourceManager.AppService.Models.SiteConfigProperties()
+                    SiteConfig = new SiteConfigProperties()
                     {
                         WindowsFxVersion = "PricingTier.StandardS1",
                         NetFrameworkVersion = "NetFrameworkVersion.V4_6",
@@ -99,7 +99,7 @@ namespace ManageLinuxWebAppBasic
                 var webSite3Collection = resourceGroup2.GetWebSites();
                 var webSite3Data = new WebSiteData(region)
                 {
-                    SiteConfig = new Azure.ResourceManager.AppService.Models.SiteConfigProperties()
+                    SiteConfig = new SiteConfigProperties()
                     {
                         WindowsFxVersion = "PricingTier.StandardS1",
                         NetFrameworkVersion = "NetFrameworkVersion.V4_6",
